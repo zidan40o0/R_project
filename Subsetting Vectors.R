@@ -23,3 +23,12 @@ x[-c(2, 10)]
 #this is a vector with named elements
 vect <- c(foo = 11, bar = 2, norf = NA)
 vect
+names(vect)
+vect2 <- c(11, 2, NA)
+#to add names to your vector, this puts names to your vect2
+names(vect2) <- c("foo", "bar", "norf")
+#this tells you whether vect and vect2 are exactly the same or not
+identical(vect, vect2)
+vect["bar"]
+#you can also do this by specifying different names to show all the elements with such names
+vect[c("foo", "bar")]1
